@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="repo.css">
+    <title>Repository</title>
+    <style>
+      * {box-sizing: border-box;}
+      
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #2196F3;
+        color: rgb(0, 0, 0);
+      }
+      
+      .topnav .search-container {
+        float: right;
+      }
+      
+      .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+      
+      .topnav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: rgb(0, 0, 0);
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .topnav .search-container button:hover {
+        background: rgb(0, 0, 0);
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;  
+        }
+      }
+
+      .wrapper .box .item .msg table, th, td {
+        border: solid 1px rgb(0, 0, 0);
+        border-collapse: collapse;
+        padding: 2px 3px;
+        text-align: center;
+      }
+
+      .wrapper .box .item .msg th { 
+        font-weight:bold;
+      }
+
+    </style>
+    <script>
+      function functionClick() {
+        $(document).ready(function() {
+          $.getJSON("./REPOfile.json", function (data) {
+              var arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
+              $.each(data, function (index, value) {
+                  arrItems.push(value);       // PUSH THE VALUES INSIDE THE ARRAY.
+              });
+
+              // EXTRACT VALUE FOR TABLE HEADER.
+              var col = [];
+              for (var i = 0; i < arrItems.length; i++) {
+                  for (var key in arrItems[i]) {
+                      if (col.indexOf(key) === -1) {
+                          col.push(key);
+                      }
+                  }
+              }
+              // get text
+              var searchTxt = document.getElementById("searchTxt").value.toLowerCase();
+
+              // CREATE DYNAMIC TABLE.
+              var table = document.createElement("table");
+
+              // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+              var tr = table.insertRow(-1);                   // TABLE ROW.
+
+              for (var i = 0; i < col.length; i++) {
+                  var th = document.createElement("th");      // TABLE HEADER.
+                  th.innerHTML = col[i];
+                  tr.appendChild(th);
+              }
+
+              // ADD JSON DATA TO THE TABLE AS ROWS.
+              for (var i = 0; i < arrItems.length; i++) {
+
+                  tr = table.insertRow(-1);
+
+                  for (var j = 0; j < col.length; j++) {
+                    var answer_text = arrItems[i][col[1]].toLowerCase()
+                    if (searchTxt == "") {
+                      var tabCell = tr.insertCell(-1);
+                      tabCell.innerHTML = arrItems[i][col[j]];
+                    }
+                    else if (searchTxt.toLowerCase().replace(/[^a-zA-Z0-9]/g, " ").includes(answer_text.toLowerCase().replace(/[^a-zA-Z0-9]/g, " ")) || answer_text.toLowerCase().replace(/[^a-zA-Z0-9]/g, " ").includes(searchTxt.toLowerCase().replace(/[^a-zA-Z0-9]/g, " "))) {
+                      var tabCell = tr.insertCell(-1);
+                      tabCell.innerHTML = arrItems[i][col[j]];
+                    }
+                  }
+              }
+
+              // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+              var divContainer = document.getElementById("showData");
+              divContainer.innerHTML = ""
+              divContainer.appendChild(table);
+          });
+      });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <section> 
+          <h1 style="position:absolute; top:200px; left:50px; width: max-content;">Tutorial</h1>
+          <br>
+          <p style="position:absolute; top: 230px; left:50px; width: max-content;">The repository is used for self browsing purposes.</p>
+          <p style="position:absolute; top: 260px; left:50px; width: max-content;"><br> Steps to use the repository</p>
+          <p style="position:absolute; top: 300px; left:50px; width: max-content;">1. Type your query into the search bar</p>
+          <p style="position:absolute; top: 330px; left:50px; width: max-content;">2. Press the magnifying glass to obtain <br> your search result</p>
+          <p style="position:absolute; top: 380px; left:50px; width: max-content;">3. If there is no responses, means we do<br> not have the  question in our database</p>
+          <br>
+          <p style="position:absolute; top: 460px; left:50px; width: max-content;">Users can also click the magnifying glass without <br> typing anything in the search box.</p>
+        </section>
+      </div>
+      <div class = "navbar">
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "chat.html">Q&A</a></li>
+          <li><a href = "repo.html">Repository</a></li>
+          <li><a href = "about.html">About Us</a></li>
+        </ul>
+      </div> 
+      <div class="title"> 
+        <div class="titleheader"> Repository
+          <style> .title .titleheader {
+            background: #007bff;
+            color: white;
+            line-height:0;
+            border-radius: 5px 5px 0 0;
+            font-size: 20px;
+            padding-left: 60px;
+            padding-top: 40px;
+            min-height: 75px;
+            max-height: 75px;
+          }
+          </style>
+          <div class="item">
+            <div class = "querybar">
+                <input type="text" placeholder="Search.." name="search" id="searchTxt">
+                <button onclick='functionClick()'><i class="fa fa-search"></i></button>
+                <style> .item .querybar{
+                    left: 400px;
+                    bottom: 10px;
+                    position:relative;
+                }
+                </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <p id='showData'></p>
+      </div>
+    </div>
+    <div>
+    </div>
+  </body>
+</html>
+<script src="REPOfile.json"></script>

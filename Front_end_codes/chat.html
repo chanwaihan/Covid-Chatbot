@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Covid ChatBot</title>
+    <style>
+        .dropbtn {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-top: 30px solid;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #007bff;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: fixed;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <section> 
+                <h3 style="position:fixed; left:50px; top: 200px; width: max-content;">FAQ Questions (Triangle Button)</h3> 
+                <p style="position:fixed; left:50px; top: 250px; width: max-content;">CQ001: What is the origin of COVID-19?</p>
+                <br>  
+                <p style="position:fixed; left:50px; top: 275px; width: max-content;">CQ002: How does the coronavirus respond <br> to changes in the weather?</p> 
+                <br>
+                <p style="position:fixed; left:50px; top: 325px; width: max-content;">CQ005: Are there any drugs that work for <br> SARS-CoV or SARS-CoV-2 in animals?</p> 
+                <br> 
+                <p style="position:fixed; left:50px; top: 400px; width: max-content;">EQ001: What is the origin of COVID-19?</p>  
+                <br>
+                <p style="position:fixed; left:50px; top: 425px; width: max-content;">EQ002: How does the coronavirus respond to <br> changes in the weather?</p> 
+                <br>
+                <p style="position:fixed; left:50px;top: 475px; width: max-content;">EQ005: What drugs have been active against  <br> SARS-CoV or SARS-CoV-2 in animal studies?</p> 
+                <br>
+                <br>
+                <h3 style="position:fixed; left:50px; top: 530px; width: max-content;">Legend</h3>
+                <p style="position:fixed; left:50px; top: 560px; width: max-content;">CQ: Consumer Question</p> 
+                <p style="position:fixed; left:50px; top: 580px; width: max-content;">EQ: Expert Question</p> 
+            </section>
+        </div>
+        <div class = "navbar">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "chat.html">Q&A</a></li>
+                <li><a href = "repo.html">Repository</a></li>
+                <li><a href = "about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="title">Covid Chatbot
+            <div class="item">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                    <style> .title .icon { 
+                        top:-18px;
+                        left: -7%;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background: #00e1ff;
+                        border-radius: 50%;
+                        color: rgb(255, 255, 255);
+                        position: relative;} 
+                    </style>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="dropdown-item" href="javascript:alert('Coronavirus Disease 2019 (COVID-19) is a virus identified as the cause of an outbreak of respiratory illness first detected in Wuhan, China.')">CQ001</a>
+                        <a class="dropdown-item" href="javascript:alert('It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.')">CQ002</a>
+                        <a class="dropdown-item" href="javascript:alert('Some types of HIV medicine (for example, lopinavir-ritonavir) to treat COVID-19 are being evaluated. Results from a clinical trialexternal icon in China showed that lopinavir-ritonavir did not speed up recovery or reduce the amount of virus produced in patients hospitalized with COVID-19 and pneumonia.')">CQ005</a>
+                        <a class="dropdown-item" href="javascript:alert('Sars-cov-2 is thought to be originated from an animal coronavirus that successfully adapted to humans. The species of origin of sars-cov-2 has not been fully identified, but the virus seems to be related to sars-cov and other coronaviruses found in bats and other mammal species. The first cases of the novel coronavirus associated disease (covid-19) have been traced to the Chinese province of Hubei in early December 2019. Although the actual index case is not really known, the first sequence of the novel coronavirus was produced within weeks from the emergence of the disease.')">EQ001</a>
+                        <a class="dropdown-item" href="javascript:alert('Temperature and relative humidity are major factors determining virus inactivation in the environment. Temperature and relative humidity have been shown to impact the kinetics of inactivation of coronaviruses. Increased temperatures have been shown to increase the rate of the inactivation, and decreased relative humidity have been associated with a reduction of coronaviruses inactivation rate on surfaces. Inactivation rates were lower in suspensions compared to surfaces in studies that tested both suspensions and surfaces at similar temperatures. Hence, the prediction of the persistence of SARS-CoV-2 on fomites is essential to investigate the importance of contact transmission.')">EQ002</a>
+                        <a class="dropdown-item" href="javascript:alert('Favipiravir is a nucleoside analog with an ability to inhibit RNA-dependent polymerase and was approved for marketing in Japan in 2014. In vitro experiments have shown that favipiravir is effective for COVID-19 and that its EC 50 is 61.88 M. To date, some clinical trials of favipiravir in the treatment of COVID-19 have been carried out in China. Recent clinical studies have found that compared with the antiviral drug arbidol, the clinical effect of favipiravir is more significant. Nucleic acid positive-to-negative time, mean antipyretic time and cough remission time were all better than those of the arbidol group.\r\nRemdesivir(GS-5734) Remdesivir was first used to treat Ebola virus, and it has completed phase 2 clinical trials. As a nucleoside analog, it can interact with RdRp, and the triphosphate form of remdesivir will compete with adenosine triphosphate, leading to delayed chain termination and inhibiting viral replication and transcription. number of in vitro studies have shown that remdesivir has inhibitory effects on a variety of human and animal coronaviruses.')">EQ005</a>
+                    </div>
+                    <style> .title .dropdown{
+                        left: 90%;
+                        bottom: 50px;}
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container" style="overflow-y:visible; overflow-x:hidden;">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span></span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <!-- <form action="#" method="POST"> -->
+                                    <input type="text" id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Type your message">
+                                    <!-- <button name="button" value="Send" onclick="sendButton()">Send</button> -->
+                                    <!-- </form> -->
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <id="chat-icon" style="color: #333;" class="fa fa fa-send" 
+                                    onclick="sendButton()">           
+                            </div>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+            
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/responses.js"></script>
+
+</html>

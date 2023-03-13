@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class = "navbar">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "chat.html">Q&A</a></li>
+                <li><a href = "repo.html">Repository</a></li>
+                <li><a href = "about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px; background-color: #007bff">
+        <h1 class="w3-margin w3-jumbo" style="color: white;">A Question-Answering System about COVID </h1>
+        <p class="w3-xlarge" style="color: white;">Presented By: Group MCS15</p>
+        </header>
+
+        <!-- First Grid -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+            <h1>Introduction</h1>
+            <h5 class="w3-padding-32" style="text-align:justify;">In late 2019, a virus named SARS-CoV-2 emerged from Wuhan, China, which resulted 
+                in a world pandemic. The disease was officially named Covid-19 or Coronavirus by the World Health
+                Organization. Coronavirus is an infectious disease that transmits via droplet or contact transmission,
+                and many people might not have the appropriate knowledge, acceptance, and perception of Covid.
+            </h5>
+
+            </div>
+
+            <div class="w3-third w3-center">
+            <i class="w3-padding-64">
+                <div>
+                    <img src="covid19.png" height="225">
+                    <style>
+                        img { 
+                            width: 400px;
+                            margin-top: 50px;
+                            margin-left: 45px;
+                        }
+                    </style>
+                </div>
+            </i>
+            </div>
+        </div>
+        </div>
+
+        <!-- Second Grid -->
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-right">
+            <i class="w3-padding-64 w3-margin-left">
+                <div>
+                    <img src="objective.png" width="300"height="225">
+                </div>
+            </i>
+            </div>
+            
+            <div class="w3-twothird">
+            <h1>Project Objective</h1>
+            <h5 class="w3-padding-32" style="text-align:justify;">The objective of our project is to create a question and answering system that can provide information related to covid
+                and a repository for self browsing.</h5>
+            </div>
+
+            
+        </div>
+        </div>
+
+        <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+            <h1 class="w3-margin w3-xlarge">Quote of the day: Be fast, have no regrets. If you need to be right before you move, you will never win</h1>
+        </div>
+
+        <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+        </script>
+
+    </body>
+</html>

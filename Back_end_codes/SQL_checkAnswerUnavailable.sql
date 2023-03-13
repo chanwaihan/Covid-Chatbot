@@ -1,0 +1,2 @@
+SELECT * FROM QUESTION q LEFT JOIN QUESTION_ANSWER qa ON q.q_id = qa.q_id
+WHERE qa.qa_id IS NULL;
