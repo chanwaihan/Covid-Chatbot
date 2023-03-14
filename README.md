@@ -51,9 +51,10 @@ Please refer to the End User Guide in <a href="https://github.com/pikachanwh/Cov
 
 ## Team Members
 Group: MCS15
-| Name         | Project Role      | Execution Role |
-|--------------|-------------------|----------------|
-| Ooi Yi Sen   | Project Manager   | Front-end      |
-| Chan Wai Han | Technical Lead    | Front-end      |
-| Nawwaf Ali   | Quality Assurance | Back-end       |
-| Yeonsoo Kim  | Quality Assurance | Back-end       |
+| Name         | Project Role       | Execution Role |
+|--------------|--------------------|----------------|
+| Soon Lay Ki  | Project Supervisor | -              |
+| Ooi Yi Sen   | Project Manager    | Front-end      |
+| Chan Wai Han | Technical Lead     | Front-end      |
+| Nawwaf Ali   | Quality Assurance  | Back-end       |
+| Yeonsoo Kim  | Quality Assurance  | Back-end       |
