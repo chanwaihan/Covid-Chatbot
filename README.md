@@ -1,4 +1,5 @@
 # Covid-Chatbot
+<img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/Front_end_codes/covid19.png" alt="covid19">
 Monash University Malaysia<br>
 FIT3161/3161 Computer Science/Data Science Project 1<br>
 FIT3162/3163 Computer Science/Data Science Project 2<br>
