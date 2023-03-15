@@ -48,10 +48,10 @@ information in real life.</li>
 </ul>
 
 ## Setup
-Please refer to the Technical Guide in <a href="https://github.com/pikachanwh/Covid-Chatbot/blob/main/PDF-files/FIT3162/user-guide/UserGuides.pdf">User Guides</a>.
+Please refer to the Technical Guide in <a href="https://github.com/pikachanwh/Covid-Chatbot/blob/main/docs/FIT3162/user-guide/UserGuides.pdf">User Guides</a>.
 
 ## Usage
-Please refer to the End User Guide in <a href="https://github.com/pikachanwh/Covid-Chatbot/blob/main/PDF-files/FIT3162/user-guide/UserGuides.pdf">User Guides</a>.
+Please refer to the End User Guide in <a href="https://github.com/pikachanwh/Covid-Chatbot/blob/main/docs/FIT3162/user-guide/UserGuides.pdf">User Guides</a>.
 
 ## Team Members
 Group: MCS15
