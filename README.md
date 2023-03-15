@@ -1,5 +1,7 @@
 # Covid-Chatbot
-<img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/Front_end_codes/covid19.png" alt="covid19">
+<figure>
+  <img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/Front_end_codes/covid19.png" alt="covid19" title="COVID-19">
+</figure>
 Monash University Malaysia<br>
 FIT3161/3161 Computer Science/Data Science Project 1<br>
 FIT3162/3163 Computer Science/Data Science Project 2<br>
@@ -13,6 +15,7 @@ Project Duration: Mar 2022 - Nov 2022
 * [Setup](#setup)
 * [Usage](#usage)
 * [Team Members](#team-members)
+* [Screenshots](#screenshots)
 
 ## Description
 A chatbot that will provide answers about COVID-19 based on keywords input by the user.
@@ -59,3 +62,19 @@ Group: MCS15
 | Chan Wai Han | Technical Lead     | Front-end      |
 | Nawwaf Ali   | Quality Assurance  | Back-end       |
 | Yeonsoo Kim  | Quality Assurance  | Back-end       |
+
+## Screenshots
+<div>
+  <img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/screenshots/chatbot_1.jpg" alt="chatbot_1" title="Covid chatbot"><br>
+  <figcaption>Figure 1: Querying the keyword “temperature” to the covid chatbot</figcaption>
+</div>
+<br><br>
+<div>
+  <img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/screenshots/chatbot_2.jpg" alt="chatbot_2" title="Covid chatbot"><br>
+  <figcaption>Figure 2: Selecting the question id to be answered by the chatbot</figcaption>
+</div>
+<br><br>
+<div>
+  <img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/screenshots/repository.jpg" alt="repository" title="Repository"><br>
+  <figcaption>Figure 3: Repository displaying the information related to the keyword “temperature"</figcaption>
+</div>
