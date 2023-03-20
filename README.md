@@ -6,7 +6,7 @@ Monash University Malaysia<br>
 FIT3161 Computer Science Project 1<br>
 FIT3162 Computer Science Project 2<br>
 <br>
-Project Duration: Mar 2022 - Nov 2022
+Project Duration: Apr 2022 - Oct 2022
 
 ## Table of Contents
 * [Description](#description)
