@@ -71,7 +71,7 @@ Group: MCS15
 <br><br>
 <div>
   <img src="https://raw.githubusercontent.com/pikachanwh/Covid-Chatbot/main/screenshots/chatbot_2.jpg" alt="chatbot_2" title="Covid chatbot"><br>
-  <figcaption>Figure 2: Selecting the question id to be answered by the chatbot</figcaption>
+  <figcaption>Figure 2: Selecting the question ID to be answered by the chatbot</figcaption>
 </div>
 <br><br>
 <div>
